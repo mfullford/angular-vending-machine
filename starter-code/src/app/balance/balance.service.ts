@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class BalanceService {
+  // cant directly update without using the public methods
   private balance: number = 0;
   private subject: Subject<number> = new Subject<number>();
 
